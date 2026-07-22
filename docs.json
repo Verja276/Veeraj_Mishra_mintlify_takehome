@@ -1,0 +1,254 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Salsa as a Service",
+  "colors": {
+    "primary": "#166534",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+  "icons": {
+    "library": "lucide"
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Navigation rationale",
+          "icon": "route",
+          "href": "/navigation-decisions"
+        },
+        {
+          "anchor": "Component rationale",
+          "icon": "blocks",
+          "href": "/v2/component-decisions"
+        }
+      ]
+    },
+    "languages": [
+      {
+        "language": "en",
+        "default": true,
+        "versions": [
+          {
+            "version": "v2",
+            "default": true,
+            "tag": "Latest",
+            "groups": [
+              {
+                "group": "Start here",
+                "icon": "rocket",
+                "root": "v2/index",
+                "pages": [
+                  "v2/getting-started",
+                  "v2/pricing"
+                ]
+              },
+              {
+                "group": "Product guides",
+                "icon": "book-open",
+                "pages": [
+                  "v2/inventory",
+                  "v2/quality",
+                  "v2/analytics",
+                  "v2/advanced-usage"
+                ]
+              },
+              {
+                "group": "Developers",
+                "icon": "code",
+                "pages": [
+                  "v2/integrations",
+                  "v2/api-reference"
+                ]
+              },
+              {
+                "group": "Support & updates",
+                "icon": "life-buoy",
+                "pages": [
+                  "v2/troubleshooting",
+                  "v2/changelog"
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v1",
+            "groups": [
+              {
+                "group": "Start here",
+                "icon": "rocket",
+                "root": "v1/index",
+                "pages": [
+                  "v1/getting-started",
+                  "v1/pricing"
+                ]
+              },
+              {
+                "group": "Product guides",
+                "icon": "book-open",
+                "pages": [
+                  "v1/inventory",
+                  "v1/quality",
+                  "v1/analytics"
+                ]
+              },
+              {
+                "group": "Developers",
+                "icon": "code",
+                "pages": [
+                  "v1/integrations",
+                  "v1/api-reference"
+                ]
+              },
+              {
+                "group": "Support & updates",
+                "icon": "life-buoy",
+                "pages": [
+                  "v1/troubleshooting",
+                  "v1/changelog"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "fr",
+        "navbar": {
+          "links": [
+            {
+              "label": "Assistance",
+              "href": "mailto:support@salsaasaservice.com"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Tableau de bord",
+            "href": "https://dashboard.salsaasaservice.com"
+          }
+        },
+        "versions": [
+          {
+            "version": "v2",
+            "default": true,
+            "tag": "Actuelle",
+            "groups": [
+              {
+                "group": "Bien démarrer",
+                "icon": "rocket",
+                "root": "fr/v2/index",
+                "pages": [
+                  "fr/v2/getting-started",
+                  "fr/v2/pricing"
+                ]
+              },
+              {
+                "group": "Guides du produit",
+                "icon": "book-open",
+                "pages": [
+                  "fr/v2/inventory",
+                  "fr/v2/quality",
+                  "fr/v2/analytics",
+                  "fr/v2/advanced-usage"
+                ]
+              },
+              {
+                "group": "Développeurs",
+                "icon": "code",
+                "pages": [
+                  "fr/v2/integrations",
+                  "fr/v2/api-reference"
+                ]
+              },
+              {
+                "group": "Assistance et mises à jour",
+                "icon": "life-buoy",
+                "pages": [
+                  "fr/v2/troubleshooting",
+                  "fr/v2/changelog"
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v1",
+            "groups": [
+              {
+                "group": "Bien démarrer",
+                "icon": "rocket",
+                "root": "fr/v1/index",
+                "pages": [
+                  "fr/v1/getting-started",
+                  "fr/v1/pricing"
+                ]
+              },
+              {
+                "group": "Guides du produit",
+                "icon": "book-open",
+                "pages": [
+                  "fr/v1/inventory",
+                  "fr/v1/quality",
+                  "fr/v1/analytics"
+                ]
+              },
+              {
+                "group": "Développeurs",
+                "icon": "code",
+                "pages": [
+                  "fr/v1/integrations",
+                  "fr/v1/api-reference"
+                ]
+              },
+              {
+                "group": "Assistance et mises à jour",
+                "icon": "life-buoy",
+                "pages": [
+                  "fr/v1/troubleshooting",
+                  "fr/v1/changelog"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@salsaasaservice.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.salsaasaservice.com"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/salsaasaservice",
+      "github": "https://github.com/salsaasaservice",
+      "linkedin": "https://linkedin.com/company/salsaasaservice"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Mintlify local build cache
+.mintlify/
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store

@@ -1,0 +1,54 @@
+---
+title: "Navigation design decisions"
+description: "The reasoning, trade-offs, and scaling principles behind this documentation structure"
+noindex: true
+---
+
+# Navigation design decisions
+
+Task 1 asked for a `docs.json` navigation that keeps every English and French page for v1 and v2 reachable, stays intuitive for different readers, and scales as the product grows. This page covers the four things the task asks the explanation to address: the decision-making process, the key user experience improvements, the trade-offs, and how the structure scales.
+
+The navigation guides readers through three decisions in a predictable order: pick a language, pick a product version, then pick the task they came to complete.
+
+## Decision-making process
+
+The documentation serves several audiences, each with a different starting point:
+
+- Prospective and new customers need an overview, setup guidance, and pricing.
+- Restaurant operators need task-focused guides for inventory, quality, and analytics.
+- Developers and integration partners need integration guidance and API reference material.
+- Existing customers need troubleshooting help and release updates.
+
+The sidebar groups pages around these journeys rather than mirroring the repository's folder layout, so the navigation stays useful to readers as the page count grows.
+
+The structure uses three layers, each with one clear responsibility:
+
+1. Language is the primary switcher, so readers enter a fully localized experience.
+2. Version separates v2 from v1 without mixing release-specific instructions in one sidebar.
+3. Task-based groups organize each version into Start here, Product guides, Developers, and Support & updates.
+
+Each Start here group uses its version's index as the group root, so the overview is reachable from the group label while setup and pricing stay visible underneath it. English is the default language and v2 the default version because v2 is the current release. French labels and navbar actions are localized rather than shown inside an English interface, which follows Mintlify's internationalization model of separate language trees.
+
+## Key user experience improvements
+
+- All 42 product pages are represented once in their correct language and version context, so no page is stranded outside the navigation. This satisfies the requirement that every English and French v1 and v2 page stays reachable.
+- The latest documentation opens by default, while v1 stays available without being marked deprecated.
+- Consistent groups across versions and languages make it easier to build a mental model and switch between releases.
+- Icons support quick scanning without adding another navigation layer.
+- Existing file paths are unchanged, preserving every current documentation URL.
+
+## Trade-offs
+
+Supporting localized labels requires repeating the navigation tree for English and French. This is more verbose than sharing one structure, but it avoids mixed-language navigation and lets future locales adapt labels or information architecture when needed.
+
+The v2-only Advanced Usage guide appears only in v2. Keeping version-specific content in its actual release prevents readers from assuming that a v1 equivalent exists.
+
+## Scaling for future growth
+
+- Add a new release as another version entry and reuse the same journey-based groups.
+- Add a locale in an ISO language directory with filenames that mirror the source content, then add a localized language entry.
+- Add pages to the group that matches the reader's task, creating another group only when a genuinely new journey emerges.
+- Keep one page path in one language context to avoid ambiguous routing.
+- Continue treating the newest stable release as the explicit default rather than relying on array order alone.
+
+Keeping language, release lifecycle, and information architecture independent lets each dimension evolve on its own as the documentation expands.

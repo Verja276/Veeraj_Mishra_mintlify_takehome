@@ -1,0 +1,55 @@
+---
+title: "Component design decisions"
+description: "Why each Mintlify component was chosen and how the v2 content design improves usability"
+noindex: true
+---
+
+# Component design decisions
+
+Task 2 asked for the v2 files, in English and French, to move from vanilla MDX to Mintlify's component library, using several components appropriately while keeping the original meaning intact. The v2 pages now lean on six presentation patterns, five built-in components and one lightweight custom banner, each chosen for a specific kind of content. This page covers the three things the task asks the explanation to address: why each component was chosen, how the enhancements improve the user experience, and the custom styling decisions.
+
+The wording, headings, examples, and claims are unchanged. The components only give readers a faster way to scan before they read in depth.
+
+## Why each component was chosen
+
+<Columns cols={2}>
+  <Card title="Cards and columns" icon="layout-grid">
+    Cards turn feature lists and destination links into scannable choices, and responsive columns keep that structure intact on smaller screens.
+  </Card>
+
+  <Card title="Steps" icon="list-ordered">
+    Steps are reserved for tasks that must happen in order, such as setup, migration, diagnostics, and production workflows.
+  </Card>
+
+  <Card title="Tabs" icon="panels-top-left">
+    Tabs gather the platform-specific POS setup (Square, Toast, Clover, Enterprise) into one panel. A restaurant runs a single POS, so readers follow only the path that applies to them instead of scrolling past the ones that do not.
+  </Card>
+
+  <Card title="Code groups" icon="code-xml">
+    Code groups place equivalent implementation approaches side by side and give each example a descriptive label.
+  </Card>
+
+  <Card title="Callouts" icon="message-square-warning">
+    Notes add context, tips suggest an optimization, and warnings flag risk, each with its own visual weight.
+  </Card>
+
+  <Card title="Custom hero" icon="paintbrush">
+    A lightweight branded banner on the v2 home page uses the site's brand gradient to set the tone the moment the page loads.
+  </Card>
+</Columns>
+
+The README calls out code groups, callouts, tabs, cards, and custom HTML and CSS as examples of strong component usage, and all five appear above. Steps is the sixth pattern, added where a procedure has to run in order. Each component is applied where its purpose fits the content rather than for decoration.
+
+## How the enhancements improve the user experience
+
+- Readers can judge the purpose and risk of a section from its visual treatment alone.
+- Procedures are separated from reference material, so the next action is never ambiguous.
+- Component wrappers improve scanning without touching the original wording, headings, examples, or claims.
+- Mutually exclusive platform choices collapse into tabs, and linked cards make the next useful destination explicit.
+- English and French v2 pages share the same component patterns, so switching languages never changes the interaction model.
+
+## Custom styling decisions
+
+The design leans on built-in components and the brand colors already defined in `docs.json`, which bring responsive behavior and dark-mode support for free. Custom HTML and CSS appear only where a built-in component cannot set the tone: a single branded hero on the v2 home page, styled inline with the same brand gradient so there is no separate stylesheet to keep in sync.
+
+
