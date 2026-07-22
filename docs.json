@@ -12,20 +12,6 @@
     "library": "lucide"
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Navigation rationale",
-          "icon": "route",
-          "href": "/navigation-decisions"
-        },
-        {
-          "anchor": "Component rationale",
-          "icon": "blocks",
-          "href": "/v2/component-decisions"
-        }
-      ]
-    },
     "languages": [
       {
         "language": "en",
@@ -35,80 +21,112 @@
             "version": "v2",
             "default": true,
             "tag": "Latest",
-            "groups": [
+            "anchors": [
               {
-                "group": "Start here",
-                "icon": "rocket",
-                "root": "v2/index",
-                "pages": [
-                  "v2/getting-started",
-                  "v2/pricing"
-                ]
-              },
-              {
-                "group": "Product guides",
+                "anchor": "Documentation",
                 "icon": "book-open",
-                "pages": [
-                  "v2/inventory",
-                  "v2/quality",
-                  "v2/analytics",
-                  "v2/advanced-usage"
+                "groups": [
+                  {
+                    "group": "Start here",
+                    "icon": "rocket",
+                    "root": "v2/index",
+                    "pages": [
+                      "v2/getting-started",
+                      "v2/pricing"
+                    ]
+                  },
+                  {
+                    "group": "Product guides",
+                    "icon": "book-open",
+                    "pages": [
+                      "v2/inventory",
+                      "v2/quality",
+                      "v2/analytics",
+                      "v2/advanced-usage"
+                    ]
+                  },
+                  {
+                    "group": "Developers",
+                    "icon": "code",
+                    "pages": [
+                      "v2/integrations",
+                      "v2/api-reference"
+                    ]
+                  },
+                  {
+                    "group": "Support & updates",
+                    "icon": "life-buoy",
+                    "pages": [
+                      "v2/troubleshooting",
+                      "v2/changelog"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Developers",
-                "icon": "code",
-                "pages": [
-                  "v2/integrations",
-                  "v2/api-reference"
-                ]
+                "anchor": "Navigation rationale",
+                "icon": "route",
+                "pages": ["navigation-decisions"]
               },
               {
-                "group": "Support & updates",
-                "icon": "life-buoy",
-                "pages": [
-                  "v2/troubleshooting",
-                  "v2/changelog"
-                ]
+                "anchor": "Component rationale",
+                "icon": "blocks",
+                "pages": ["component-decisions"]
               }
             ]
           },
           {
             "version": "v1",
-            "groups": [
+            "anchors": [
               {
-                "group": "Start here",
-                "icon": "rocket",
-                "root": "v1/index",
-                "pages": [
-                  "v1/getting-started",
-                  "v1/pricing"
-                ]
-              },
-              {
-                "group": "Product guides",
+                "anchor": "Documentation",
                 "icon": "book-open",
-                "pages": [
-                  "v1/inventory",
-                  "v1/quality",
-                  "v1/analytics"
+                "groups": [
+                  {
+                    "group": "Start here",
+                    "icon": "rocket",
+                    "root": "v1/index",
+                    "pages": [
+                      "v1/getting-started",
+                      "v1/pricing"
+                    ]
+                  },
+                  {
+                    "group": "Product guides",
+                    "icon": "book-open",
+                    "pages": [
+                      "v1/inventory",
+                      "v1/quality",
+                      "v1/analytics"
+                    ]
+                  },
+                  {
+                    "group": "Developers",
+                    "icon": "code",
+                    "pages": [
+                      "v1/integrations",
+                      "v1/api-reference"
+                    ]
+                  },
+                  {
+                    "group": "Support & updates",
+                    "icon": "life-buoy",
+                    "pages": [
+                      "v1/troubleshooting",
+                      "v1/changelog"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Developers",
-                "icon": "code",
-                "pages": [
-                  "v1/integrations",
-                  "v1/api-reference"
-                ]
+                "anchor": "Navigation rationale",
+                "icon": "route",
+                "pages": ["navigation-decisions"]
               },
               {
-                "group": "Support & updates",
-                "icon": "life-buoy",
-                "pages": [
-                  "v1/troubleshooting",
-                  "v1/changelog"
-                ]
+                "anchor": "Component rationale",
+                "icon": "blocks",
+                "pages": ["component-decisions"]
               }
             ]
           }
@@ -134,80 +152,112 @@
             "version": "v2",
             "default": true,
             "tag": "Actuelle",
-            "groups": [
+            "anchors": [
               {
-                "group": "Bien démarrer",
-                "icon": "rocket",
-                "root": "fr/v2/index",
-                "pages": [
-                  "fr/v2/getting-started",
-                  "fr/v2/pricing"
-                ]
-              },
-              {
-                "group": "Guides du produit",
+                "anchor": "Documentation",
                 "icon": "book-open",
-                "pages": [
-                  "fr/v2/inventory",
-                  "fr/v2/quality",
-                  "fr/v2/analytics",
-                  "fr/v2/advanced-usage"
+                "groups": [
+                  {
+                    "group": "Bien démarrer",
+                    "icon": "rocket",
+                    "root": "fr/v2/index",
+                    "pages": [
+                      "fr/v2/getting-started",
+                      "fr/v2/pricing"
+                    ]
+                  },
+                  {
+                    "group": "Guides du produit",
+                    "icon": "book-open",
+                    "pages": [
+                      "fr/v2/inventory",
+                      "fr/v2/quality",
+                      "fr/v2/analytics",
+                      "fr/v2/advanced-usage"
+                    ]
+                  },
+                  {
+                    "group": "Développeurs",
+                    "icon": "code",
+                    "pages": [
+                      "fr/v2/integrations",
+                      "fr/v2/api-reference"
+                    ]
+                  },
+                  {
+                    "group": "Assistance et mises à jour",
+                    "icon": "life-buoy",
+                    "pages": [
+                      "fr/v2/troubleshooting",
+                      "fr/v2/changelog"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Développeurs",
-                "icon": "code",
-                "pages": [
-                  "fr/v2/integrations",
-                  "fr/v2/api-reference"
-                ]
+                "anchor": "Navigation rationale",
+                "icon": "route",
+                "pages": ["navigation-decisions"]
               },
               {
-                "group": "Assistance et mises à jour",
-                "icon": "life-buoy",
-                "pages": [
-                  "fr/v2/troubleshooting",
-                  "fr/v2/changelog"
-                ]
+                "anchor": "Component rationale",
+                "icon": "blocks",
+                "pages": ["component-decisions"]
               }
             ]
           },
           {
             "version": "v1",
-            "groups": [
+            "anchors": [
               {
-                "group": "Bien démarrer",
-                "icon": "rocket",
-                "root": "fr/v1/index",
-                "pages": [
-                  "fr/v1/getting-started",
-                  "fr/v1/pricing"
-                ]
-              },
-              {
-                "group": "Guides du produit",
+                "anchor": "Documentation",
                 "icon": "book-open",
-                "pages": [
-                  "fr/v1/inventory",
-                  "fr/v1/quality",
-                  "fr/v1/analytics"
+                "groups": [
+                  {
+                    "group": "Bien démarrer",
+                    "icon": "rocket",
+                    "root": "fr/v1/index",
+                    "pages": [
+                      "fr/v1/getting-started",
+                      "fr/v1/pricing"
+                    ]
+                  },
+                  {
+                    "group": "Guides du produit",
+                    "icon": "book-open",
+                    "pages": [
+                      "fr/v1/inventory",
+                      "fr/v1/quality",
+                      "fr/v1/analytics"
+                    ]
+                  },
+                  {
+                    "group": "Développeurs",
+                    "icon": "code",
+                    "pages": [
+                      "fr/v1/integrations",
+                      "fr/v1/api-reference"
+                    ]
+                  },
+                  {
+                    "group": "Assistance et mises à jour",
+                    "icon": "life-buoy",
+                    "pages": [
+                      "fr/v1/troubleshooting",
+                      "fr/v1/changelog"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Développeurs",
-                "icon": "code",
-                "pages": [
-                  "fr/v1/integrations",
-                  "fr/v1/api-reference"
-                ]
+                "anchor": "Navigation rationale",
+                "icon": "route",
+                "pages": ["navigation-decisions"]
               },
               {
-                "group": "Assistance et mises à jour",
-                "icon": "life-buoy",
-                "pages": [
-                  "fr/v1/troubleshooting",
-                  "fr/v1/changelog"
-                ]
+                "anchor": "Component rationale",
+                "icon": "blocks",
+                "pages": ["component-decisions"]
               }
             ]
           }
